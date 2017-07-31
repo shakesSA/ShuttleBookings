@@ -1,0 +1,344 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+
+<meta name="description" content="????">
+<meta name="keywords" content="????">
+<title>
+PERSONALIZED TOURS AND TRANSFERS - Add a Client
+</title>
+<link rel="stylesheet" type="text/css" href="/js/style.css"> 
+<script language="javascript" src="js/validateinfo.js"></script>
+
+</head>
+
+<body>
+
+<!--Heading and top links table-------------------->
+<table border="0" width="50%" align="center" height="1" cellspacing="0" cellpading="0">
+<img src="LOGO.jpg" width=950 alt="P T & T">
+</table>
+<br><br>
+<table border="2" width="50%" align="center" height="25" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="25%"><a href="../newhome.html">MAIN MENU</a></td>
+</tr>
+</table>
+
+<form name="info"
+      action="../cgi/addwork.pl"
+      method="post" onSubmit="return clientinfo(info)">
+
+<p align="center">
+
+<table border="0" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>CONFIRMATION OF TRANSFER</font></td>
+</tr>
+</table>
+
+<table border="2" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>CLIENT DETAILS</font></td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpading="0" cellspacing="0" width=75%>
+
+<tr>
+<td>
+<img src="/buttons/name.png">
+</td>
+<td>
+<input name="C_name" type="text" size="40" maxlength="40">
+</td>
+
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/telno.png">
+</td>
+<td>
+<input name="C_telno" type="text" size="25" maxlength="25">
+</td>
+</tr>
+
+</table>
+<br>
+
+<table border="2" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>DEPARTURE INFO</font></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpading="0" cellspacing="0" width=75%>
+
+<tr>
+<td>
+<img src="/buttons/date.png">
+</td>
+<td>
+<input name="CD_date" type="date" size="10" maxlength="10"> <b>&nbsp(CCYY-MM-DD)
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/pickuptime.png">
+</td>
+<td>
+<input name="CD_pickuptime" type="text" size="25" maxlength="25">
+</td>
+
+<td>
+<img src="/buttons/flightno.png">
+</td>
+<td>
+<input name="CD_flightno" type="text" size="25" maxlength="25">
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/addressfrom.png">
+</td>
+<td>
+<textarea name="CD_addressfrom" cols="20" rows="5"></textarea>
+</td>
+
+
+<td>
+<img src="/buttons/addressto.png">
+</td>
+<td>
+<textarea name="CD_addressto" cols="20" rows="5"></textarea>
+</td>
+</tr>
+
+</table>
+
+<br>
+<table border="2" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>RETURN INFO</font></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpading="0" cellspacing="0" width=75%>
+
+<tr>
+<td>
+<img src="/buttons/date.png">
+</td>
+<td>
+<input name="CR_date" type="date" size="10" maxlength="10"> <b>&nbsp(CCYY-MM-DD)
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/pickuptime.png">
+</td>
+<td>
+<input name="CR_pickuptime" type="text" size="25" maxlength="25">
+</td>
+
+<td>
+<img src="/buttons/flightno.png">
+</td>
+<td>
+<input name="CR_flightno" type="text" size="25" maxlength="25">
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/addressfrom.png">
+</td>
+<td>
+<textarea name="CR_addressfrom" cols="20" rows="5"></textarea>
+</td>
+
+
+<td>
+<img src="/buttons/addressto.png">
+</td>
+<td>
+<textarea name="CR_addressto" cols="20" rows="5"></textarea>
+</td>
+</tr>
+
+</table>
+<br>
+
+
+<table border="2" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>AGENT DETAILS</font></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpading="0" cellspacing="0" width=75%>
+
+<tr>
+<td>
+<img src="/buttons/name.png">
+</td>
+<td>
+<input name="A_name" type="text" size="30" maxlength="30">
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/consultant.png">
+</td>
+<td>
+<input name="A_consultant" type="text" size="25" maxlength="25">
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/telno.png">
+</td>
+<td>
+<input name="A_telno" type="text" size="25" maxlength="25">
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/faxno.png">
+</td>
+<td>
+<input name="A_faxno" type="text" size="25" maxlength="25">
+</td>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="/buttons/emailaddress.png">
+</td>
+<td>
+<input name="A_email" type="text" size="25" maxlength="25">
+</td>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+
+<tr>
+<td>
+<img src="/buttons/specialinstructions.png">
+</td>
+<td>
+<textarea name="A_instructions" cols="70" rows="5"></textarea>
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<table border="2" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>To be filled in by Personalized Tours and Transfers</font></td>
+</tr>
+</table>
+<br>
+<table border="0" cellpading="0" cellspacing="0" width=75%>
+
+<tr>
+<td>
+<img src="/buttons/cashdirectdeposit.png">
+</td>
+<td>
+<input name="C_payment" type="text" size="10" maxlength="10">
+</td>
+<td>
+<select name="C_manner" >
+<option selected>CASH</option>
+<option>DIRECT DEPOSIT</option>
+</select>
+</td>
+</tr>
+
+</table>
+
+</p>
+
+<table>
+
+<tr>
+<td>
+<input type="submit" value="ADD CLIENT"><input type="reset" value="RESET">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>

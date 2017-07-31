@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+
+<meta name="description" content="????">
+<meta name="keywords" content="????">
+<title>
+PERSONALIZED TOURS AND TRANSFERS - Register an Agent
+</title>
+<script language="javascript" src="js/validateinfo.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/style.css"> 
+</head>
+
+<body>
+
+<!--Heading and top links table-------------------->
+<table border="0" width="50%" align="center" height="1" cellspacing="0" cellpading="0">
+<img src="LOGO.jpg" width=950 alt="P T & T">
+</table>
+<br><br>
+<table border="2" width="50%" align="center" height="25" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="25%"><a href="../newhome.html">MAIN MENU</a></td>
+</tr>
+</table>
+
+<form name="info"
+      action="../cgi/getreport.pl"
+      method="post" onSubmit="return reportinfo(info)">
+
+<p align="center">
+
+<table border="2" width="100%" align="center" height="1" cellspacing="0" cellpading="0">
+<tr align="center">
+<td width="100%"><font color="black"><b>REPORTS</b></font></td>
+</tr>
+</table>
+<br>
+
+<table border="0" cellpading="0" cellspacing="0" width=50%>
+
+<tr>
+<td>
+<b><img src="/buttons/selectreport.png"> (CCYY-MM-DD):
+</td>
+<td>
+<input name="r_year" type="text" size="4" maxlength="4">
+</td>
+<td>
+<b>--
+</td>
+<td>
+<input name="r_month" type="text" size="2" maxlength="2">
+</td>
+<td>
+<b>--
+</td>
+<td>
+<input name="r_day" type="text" size="2" maxlength="2">
+</td>
+</tr>
+
+<tr>
+<td>
+&nbsp
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="submit" value="SUBMIT"><input type="reset" value="RESET">
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+
+</html>
